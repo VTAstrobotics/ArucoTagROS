@@ -10,8 +10,7 @@ arucoDict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_50)
 arucoParams = cv2.aruco.DetectorParameters()
 arucoDetector = cv2.aruco.ArucoDetector(arucoDict, arucoParams)
 
-root = r"C:\Users\jeron\OneDrive\Documents\GitHub\ArucoTagROS" #bad practice change later
-paramPath = os.path.join(root, "matrixanddist.npz") # before using, you must run calibrate.py to obtain calibration matrix
+paramPath = os.path.join('.', "matrixanddist.npz") # before using, you must run calibrate.py to obtain calibration matrix
 
 if not os.path.exists(paramPath):
     print(".npz path does not exist")
