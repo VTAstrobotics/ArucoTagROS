@@ -21,13 +21,13 @@ class PosePublisher(Node):
             'stop_aruco',
             self.stop_callback,
             10)
-        # self.image_subscription = self.create_subscription(
-        #     Image,
-        #     'camera/image',
-        #     self.image_callback,
-        #     10) try image subscription with CvBridge
+        self.image_subscription = self.create_subscription(
+            Image,
+            'camera/image',
+            self.image_callback,
+            10) #try image subscription with CvBridge
             
-        # self.bridge = CvBridge()
+        self.bridge = CvBridge()
         self.stop = False
 
         self.arucoDict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_50)
@@ -49,17 +49,18 @@ class PosePublisher(Node):
             [self.markerLength / 2, -self.markerLength / 2, 0],
             [-self.markerLength / 2, -self.markerLength / 2, 0]
         ], dtype=np.float32)
-        self.vs = VideoStream(src=0).start()
+        #self.vs = VideoStream(src=0).start()
 
     def stop_callback(self, msg):
         self.stop = msg.data
         self.get_logger().info(f'Detection {"stopped" if self.stop else "resumed"}')
 
     def image_callback(self, msg):
+        frame = self.bridge.imgmsg_to_cv2(msg, 'bgra8')
+
         if self.stop:
             return
         try:
-            frame = self.vs.read()
             frame = imutils.resize(frame, width=600)
             corners, ids, _ = self.arucoDetector.detectMarkers(frame)
 

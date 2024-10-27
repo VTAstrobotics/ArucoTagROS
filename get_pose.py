@@ -58,4 +58,3 @@ while True:
 
 cv2.destroyAllWindows()
 vs.stop()
-
