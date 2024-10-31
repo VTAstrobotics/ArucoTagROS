@@ -2,20 +2,19 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
-from std_msgs.msg import String, Bool, Image, Pose
+from std_msgs.msg import Bool
+from geometry_msgs.msg import Pose
 import cv2
 import os
 import imutils
 import numpy as np
-from imutils.video import VideoStream
-
 
 class PosePublisher(Node):
     def __init__(self):
         super().__init__('pose_publisher')
         
-        # Publishers and Subscribers
-        self.pose_publisher = self.create_publisher(String, 'pose', 10)
+
+        self.pose_publisher = self.create_publisher(Pose, 'pose', 10)
         self.stop_subscription = self.create_subscription(
             Bool,
             'stop_aruco',
@@ -25,15 +24,17 @@ class PosePublisher(Node):
             Image,
             'camera/image',
             self.image_callback,
-            10) #try image subscription with CvBridge
+            10)
             
         self.bridge = CvBridge()
         self.stop = False
 
+
         self.arucoDict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_50)
-        self.arucoParams = cv2.aruco.DetectorParameters()
+        self.arucoParams = cv2.aruco.DetectorParameters_create()
         self.arucoDetector = cv2.aruco.ArucoDetector(self.arucoDict, self.arucoParams)
 
+        # Load camera calibration data
         paramPath = os.path.join('.', "matrixanddist.npz")
         if not os.path.exists(paramPath):
             self.get_logger().error(".npz path does not exist")
@@ -49,11 +50,14 @@ class PosePublisher(Node):
             [self.markerLength / 2, -self.markerLength / 2, 0],
             [-self.markerLength / 2, -self.markerLength / 2, 0]
         ], dtype=np.float32)
-        #self.vs = VideoStream(src=0).start()
 
     def stop_callback(self, msg):
         self.stop = msg.data
-        self.get_logger().info(f'Detection {"stopped" if self.stop else "resumed"}')
+        if(self.stop):
+            self.get_logger().info("Stopped")
+    
+        else:
+            self.get_logger().info("Resumed")
 
     def image_callback(self, msg):
         frame = self.bridge.imgmsg_to_cv2(msg, 'bgra8')
@@ -75,18 +79,17 @@ class PosePublisher(Node):
                     )
                     
                     if success:
-                        pose_data = f"Marker ID: {markerID}, Translation: {tvec.flatten()}, Rotation: {rvec.flatten()}"
-                        self.pose_publisher.publish(String(data=pose_data))
-                        self.get_logger().info(f"Published pose: {pose_data}")
-                    
+
+                        pose_msg = Pose()
+                        pose_msg.position.x, pose_msg.position.y, pose_msg.position.z = tvec.flatten()
+                        pose_msg.orientation.x, pose_msg.orientation.y, pose_msg.orientation.z = rvec.flatten()[:3]
+                        pose_msg.orientation.w = 0 
+
+                        self.pose_publisher.publish(pose_msg)
+                        self.get_logger().info(f"Published pose")
+
         except Exception as e:
             self.get_logger().error(f'Error processing frame: {str(e)}')
-
-    def destroy_node(self):
-        self.vs.stop()
-        cv2.destroyAllWindows()
-        super().destroy_node()
-
 
 def main(args=None):
     rclpy.init(args=args)
@@ -96,7 +99,6 @@ def main(args=None):
 
     pose_publisher.destroy_node()
     rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()
