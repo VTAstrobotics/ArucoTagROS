@@ -31,7 +31,7 @@ class PosePublisher(Node):
 
 
         self.arucoDict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_50)
-        self.arucoParams = cv2.aruco.DetectorParameters_create()
+        self.arucoParams = cv2.aruco.DetectorParameters()
         self.arucoDetector = cv2.aruco.ArucoDetector(self.arucoDict, self.arucoParams)
 
         # Load camera calibration data
