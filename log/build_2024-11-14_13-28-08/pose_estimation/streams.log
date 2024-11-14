@@ -1,0 +1,24 @@
+[1.952s] Invoking command in '/home/astrobotics/arcuo/src/pose_estimation': PYTHONPATH=/home/astrobotics/arcuo/build/pose_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pose_estimation build --build-base /home/astrobotics/arcuo/build/pose_estimation/build install --record /home/astrobotics/arcuo/build/pose_estimation/install.log --single-version-externally-managed install_data
+[2.444s] running egg_info
+[2.445s] writing ../../build/pose_estimation/pose_estimation.egg-info/PKG-INFO
+[2.445s] writing dependency_links to ../../build/pose_estimation/pose_estimation.egg-info/dependency_links.txt
+[2.445s] writing entry points to ../../build/pose_estimation/pose_estimation.egg-info/entry_points.txt
+[2.446s] writing requirements to ../../build/pose_estimation/pose_estimation.egg-info/requires.txt
+[2.446s] writing top-level names to ../../build/pose_estimation/pose_estimation.egg-info/top_level.txt
+[2.449s] reading manifest file '../../build/pose_estimation/pose_estimation.egg-info/SOURCES.txt'
+[2.451s] writing manifest file '../../build/pose_estimation/pose_estimation.egg-info/SOURCES.txt'
+[2.451s] running build
+[2.451s] running build_py
+[2.452s] copying pose_estimation/aruco_node.py -> /home/astrobotics/arcuo/build/pose_estimation/build/lib/pose_estimation
+[2.452s] running install
+[2.453s] running install_lib
+[2.455s] copying /home/astrobotics/arcuo/build/pose_estimation/build/lib/pose_estimation/aruco_node.py -> /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose_estimation
+[2.456s] byte-compiling /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose_estimation/aruco_node.py to aruco_node.cpython-310.pyc
+[2.458s] running install_data
+[2.459s] running install_egg_info
+[2.462s] removing '/home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose_estimation-0.0.0-py3.10.egg-info' (and everything under it)
+[2.463s] Copying ../../build/pose_estimation/pose_estimation.egg-info to /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose_estimation-0.0.0-py3.10.egg-info
+[2.465s] running install_scripts
+[2.507s] Installing aruco_node script to /home/astrobotics/arcuo/install/pose_estimation/lib/pose_estimation
+[2.508s] writing list of installed files to '/home/astrobotics/arcuo/build/pose_estimation/install.log'
+[2.578s] Invoked command in '/home/astrobotics/arcuo/src/pose_estimation' returned '0': PYTHONPATH=/home/astrobotics/arcuo/build/pose_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pose_estimation build --build-base /home/astrobotics/arcuo/build/pose_estimation/build install --record /home/astrobotics/arcuo/build/pose_estimation/install.log --single-version-externally-managed install_data

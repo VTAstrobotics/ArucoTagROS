@@ -1,0 +1,21 @@
+[1.963s] Invoking command in '/home/astrobotics/arcuo/build/pose_estimation': PYTHONPATH=/home/astrobotics/arcuo/build/pose_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/astrobotics/arcuo/build/pose_estimation/build --no-deps symlink_data --force
+[2.532s] running develop
+[2.538s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.538s]   warnings.warn(
+[2.880s] running egg_info
+[2.881s] writing pose_estimation.egg-info/PKG-INFO
+[2.881s] writing dependency_links to pose_estimation.egg-info/dependency_links.txt
+[2.882s] writing entry points to pose_estimation.egg-info/entry_points.txt
+[2.882s] writing requirements to pose_estimation.egg-info/requires.txt
+[2.882s] writing top-level names to pose_estimation.egg-info/top_level.txt
+[2.886s] reading manifest file 'pose_estimation.egg-info/SOURCES.txt'
+[2.888s] writing manifest file 'pose_estimation.egg-info/SOURCES.txt'
+[3.004s] running build_ext
+[3.004s] Creating /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose-estimation.egg-link (link to .)
+[3.007s] Installing aruco_node script to /home/astrobotics/arcuo/install/pose_estimation/lib/pose_estimation
+[3.007s] 
+[3.007s] Installed /home/astrobotics/arcuo/build/pose_estimation
+[3.009s] running symlink_data
+[3.009s] symbolically linking /home/astrobotics/arcuo/build/pose_estimation/resource/pose_estimation -> /home/astrobotics/arcuo/install/pose_estimation/share/ament_index/resource_index/packages
+[3.010s] symbolically linking /home/astrobotics/arcuo/build/pose_estimation/package.xml -> /home/astrobotics/arcuo/install/pose_estimation/share/pose_estimation
+[3.149s] Invoked command in '/home/astrobotics/arcuo/build/pose_estimation' returned '0': PYTHONPATH=/home/astrobotics/arcuo/build/pose_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/astrobotics/arcuo/build/pose_estimation/build --no-deps symlink_data --force

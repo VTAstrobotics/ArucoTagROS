@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.000618] (pose_estimation) JobQueued: {'identifier': 'pose_estimation', 'dependencies': OrderedDict()}
+[0.001115] (pose_estimation) JobStarted: {'identifier': 'pose_estimation'}
+[0.099443] (-) TimerEvent: {}
+[0.200002] (-) TimerEvent: {}
+[0.300602] (-) TimerEvent: {}
+[0.401175] (-) TimerEvent: {}
+[0.501777] (-) TimerEvent: {}
+[0.602306] (-) TimerEvent: {}
+[0.702904] (-) TimerEvent: {}
+[0.803481] (-) TimerEvent: {}
+[0.904055] (-) TimerEvent: {}
+[1.004631] (-) TimerEvent: {}
+[1.105195] (-) TimerEvent: {}
+[1.205825] (-) TimerEvent: {}
+[1.306707] (-) TimerEvent: {}
+[1.407538] (-) TimerEvent: {}
+[1.508396] (-) TimerEvent: {}
+[1.609018] (-) TimerEvent: {}
+[1.709915] (-) TimerEvent: {}
+[1.810731] (-) TimerEvent: {}
+[1.822323] (pose_estimation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/pose_estimation', 'build', '--build-base', '/home/astrobotics/arcuo/build/pose_estimation/build', 'install', '--record', '/home/astrobotics/arcuo/build/pose_estimation/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/astrobotics/arcuo/src/pose_estimation', 'env': {'USER': 'astrobotics', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/astrobotics/ros2_ws/install/zed_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/astrobotics', 'OLDPWD': '/home/astrobotics/arcuo/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2514', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/astrobotics/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'astrobotics', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'astrobotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ISAAC_ROS_WS': '/home/astrobotics/workspaces/isaac_ros-dev/', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/astrobotics/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/astrobotics-desktop:@/tmp/.ICE-unix/2349,unix/astrobotics-desktop:/tmp/.ICE-unix/2349', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/90242644_ffc6_4998_a81c_53c0946a48cc', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/astrobotics/ros2_ws/install/zed_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/astrobotics/arcuo/build/pose_estimation', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/astrobotics/arcuo/build/pose_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages:/home/astrobotics/ros2_ws/install/zed_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/astrobotics/ros2_ws/install/zed_msgs'}, 'shell': False}
+[1.910869] (-) TimerEvent: {}
+[2.011400] (-) TimerEvent: {}
+[2.111851] (-) TimerEvent: {}
+[2.212357] (-) TimerEvent: {}
+[2.312798] (-) TimerEvent: {}
+[2.329479] (pose_estimation) StdoutLine: {'line': b'running egg_info\n'}
+[2.330641] (pose_estimation) StdoutLine: {'line': b'creating ../../build/pose_estimation/pose_estimation.egg-info\n'}
+[2.331034] (pose_estimation) StdoutLine: {'line': b'writing ../../build/pose_estimation/pose_estimation.egg-info/PKG-INFO\n'}
+[2.331511] (pose_estimation) StdoutLine: {'line': b'writing dependency_links to ../../build/pose_estimation/pose_estimation.egg-info/dependency_links.txt\n'}
+[2.331781] (pose_estimation) StdoutLine: {'line': b'writing entry points to ../../build/pose_estimation/pose_estimation.egg-info/entry_points.txt\n'}
+[2.332004] (pose_estimation) StdoutLine: {'line': b'writing requirements to ../../build/pose_estimation/pose_estimation.egg-info/requires.txt\n'}
+[2.332201] (pose_estimation) StdoutLine: {'line': b'writing top-level names to ../../build/pose_estimation/pose_estimation.egg-info/top_level.txt\n'}
+[2.332609] (pose_estimation) StdoutLine: {'line': b"writing manifest file '../../build/pose_estimation/pose_estimation.egg-info/SOURCES.txt'\n"}
+[2.335639] (pose_estimation) StdoutLine: {'line': b"reading manifest file '../../build/pose_estimation/pose_estimation.egg-info/SOURCES.txt'\n"}
+[2.336984] (pose_estimation) StdoutLine: {'line': b"writing manifest file '../../build/pose_estimation/pose_estimation.egg-info/SOURCES.txt'\n"}
+[2.337289] (pose_estimation) StdoutLine: {'line': b'running build\n'}
+[2.337450] (pose_estimation) StdoutLine: {'line': b'running build_py\n'}
+[2.337616] (pose_estimation) StdoutLine: {'line': b'creating /home/astrobotics/arcuo/build/pose_estimation/build\n'}
+[2.337763] (pose_estimation) StdoutLine: {'line': b'creating /home/astrobotics/arcuo/build/pose_estimation/build/lib\n'}
+[2.337920] (pose_estimation) StdoutLine: {'line': b'creating /home/astrobotics/arcuo/build/pose_estimation/build/lib/pose_estimation\n'}
+[2.338076] (pose_estimation) StdoutLine: {'line': b'copying pose_estimation/__init__.py -> /home/astrobotics/arcuo/build/pose_estimation/build/lib/pose_estimation\n'}
+[2.338315] (pose_estimation) StdoutLine: {'line': b'copying pose_estimation/aruco_node.py -> /home/astrobotics/arcuo/build/pose_estimation/build/lib/pose_estimation\n'}
+[2.338734] (pose_estimation) StdoutLine: {'line': b'running install\n'}
+[2.339362] (pose_estimation) StdoutLine: {'line': b'running install_lib\n'}
+[2.341085] (pose_estimation) StdoutLine: {'line': b'creating /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose_estimation\n'}
+[2.341553] (pose_estimation) StdoutLine: {'line': b'copying /home/astrobotics/arcuo/build/pose_estimation/build/lib/pose_estimation/__init__.py -> /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose_estimation\n'}
+[2.341915] (pose_estimation) StdoutLine: {'line': b'copying /home/astrobotics/arcuo/build/pose_estimation/build/lib/pose_estimation/aruco_node.py -> /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose_estimation\n'}
+[2.343705] (pose_estimation) StdoutLine: {'line': b'byte-compiling /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose_estimation/__init__.py to __init__.cpython-310.pyc\n'}
+[2.344701] (pose_estimation) StdoutLine: {'line': b'byte-compiling /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose_estimation/aruco_node.py to aruco_node.cpython-310.pyc\n'}
+[2.347046] (pose_estimation) StdoutLine: {'line': b'running install_data\n'}
+[2.347258] (pose_estimation) StdoutLine: {'line': b'creating /home/astrobotics/arcuo/install/pose_estimation/share/ament_index\n'}
+[2.347471] (pose_estimation) StdoutLine: {'line': b'creating /home/astrobotics/arcuo/install/pose_estimation/share/ament_index/resource_index\n'}
+[2.347638] (pose_estimation) StdoutLine: {'line': b'creating /home/astrobotics/arcuo/install/pose_estimation/share/ament_index/resource_index/packages\n'}
+[2.347793] (pose_estimation) StdoutLine: {'line': b'copying resource/pose_estimation -> /home/astrobotics/arcuo/install/pose_estimation/share/ament_index/resource_index/packages\n'}
+[2.347968] (pose_estimation) StdoutLine: {'line': b'copying package.xml -> /home/astrobotics/arcuo/install/pose_estimation/share/pose_estimation\n'}
+[2.348137] (pose_estimation) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.351648] (pose_estimation) StdoutLine: {'line': b'Copying ../../build/pose_estimation/pose_estimation.egg-info to /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose_estimation-0.0.0-py3.10.egg-info\n'}
+[2.353602] (pose_estimation) StdoutLine: {'line': b'running install_scripts\n'}
+[2.398981] (pose_estimation) StdoutLine: {'line': b'Installing aruco_node script to /home/astrobotics/arcuo/install/pose_estimation/lib/pose_estimation\n'}
+[2.399741] (pose_estimation) StdoutLine: {'line': b"writing list of installed files to '/home/astrobotics/arcuo/build/pose_estimation/install.log'\n"}
+[2.412897] (-) TimerEvent: {}
+[2.461813] (pose_estimation) CommandEnded: {'returncode': 0}
+[2.515009] (-) TimerEvent: {}
+[2.517084] (pose_estimation) JobEnded: {'identifier': 'pose_estimation', 'rc': 0}
+[2.519758] (-) EventReactorShutdown: {}

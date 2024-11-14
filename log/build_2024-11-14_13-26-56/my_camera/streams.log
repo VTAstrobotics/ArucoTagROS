@@ -1,0 +1,24 @@
+[2.003s] Invoking command in '/home/astrobotics/arcuo/src/my_camera': PYTHONPATH=/home/astrobotics/arcuo/build/my_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/astrobotics/arcuo/install/my_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_camera build --build-base /home/astrobotics/arcuo/build/my_camera/build install --record /home/astrobotics/arcuo/build/my_camera/install.log --single-version-externally-managed install_data
+[2.500s] running egg_info
+[2.502s] writing ../../build/my_camera/my_camera.egg-info/PKG-INFO
+[2.502s] writing dependency_links to ../../build/my_camera/my_camera.egg-info/dependency_links.txt
+[2.503s] writing entry points to ../../build/my_camera/my_camera.egg-info/entry_points.txt
+[2.503s] writing requirements to ../../build/my_camera/my_camera.egg-info/requires.txt
+[2.503s] writing top-level names to ../../build/my_camera/my_camera.egg-info/top_level.txt
+[2.507s] reading manifest file '../../build/my_camera/my_camera.egg-info/SOURCES.txt'
+[2.507s] adding license file 'LICENSE'
+[2.509s] writing manifest file '../../build/my_camera/my_camera.egg-info/SOURCES.txt'
+[2.509s] running build
+[2.509s] running build_py
+[2.510s] running install
+[2.510s] running install_lib
+[2.514s] running install_data
+[2.514s] running install_egg_info
+[2.517s] removing '/home/astrobotics/arcuo/install/my_camera/lib/python3.10/site-packages/my_camera-0.0.0-py3.10.egg-info' (and everything under it)
+[2.518s] Copying ../../build/my_camera/my_camera.egg-info to /home/astrobotics/arcuo/install/my_camera/lib/python3.10/site-packages/my_camera-0.0.0-py3.10.egg-info
+[2.520s] running install_scripts
+[2.565s] Installing ip_stream_node script to /home/astrobotics/arcuo/install/my_camera/lib/my_camera
+[2.565s] Installing usbcam_node script to /home/astrobotics/arcuo/install/my_camera/lib/my_camera
+[2.565s] Installing webcam_node script to /home/astrobotics/arcuo/install/my_camera/lib/my_camera
+[2.566s] writing list of installed files to '/home/astrobotics/arcuo/build/my_camera/install.log'
+[2.636s] Invoked command in '/home/astrobotics/arcuo/src/my_camera' returned '0': PYTHONPATH=/home/astrobotics/arcuo/build/my_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/astrobotics/arcuo/install/my_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_camera build --build-base /home/astrobotics/arcuo/build/my_camera/build install --record /home/astrobotics/arcuo/build/my_camera/install.log --single-version-externally-managed install_data

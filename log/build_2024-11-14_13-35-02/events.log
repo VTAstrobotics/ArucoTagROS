@@ -1,0 +1,83 @@
+[0.000000] (-) TimerEvent: {}
+[0.000590] (my_camera) JobQueued: {'identifier': 'my_camera', 'dependencies': OrderedDict()}
+[0.001101] (pose_estimation) JobQueued: {'identifier': 'pose_estimation', 'dependencies': OrderedDict()}
+[0.001401] (my_camera) JobStarted: {'identifier': 'my_camera'}
+[0.019643] (pose_estimation) JobStarted: {'identifier': 'pose_estimation'}
+[0.099439] (-) TimerEvent: {}
+[0.200021] (-) TimerEvent: {}
+[0.300601] (-) TimerEvent: {}
+[0.401199] (-) TimerEvent: {}
+[0.501793] (-) TimerEvent: {}
+[0.602655] (-) TimerEvent: {}
+[0.704617] (-) TimerEvent: {}
+[0.805240] (-) TimerEvent: {}
+[0.905841] (-) TimerEvent: {}
+[1.006432] (-) TimerEvent: {}
+[1.107057] (-) TimerEvent: {}
+[1.207800] (-) TimerEvent: {}
+[1.308666] (-) TimerEvent: {}
+[1.409278] (-) TimerEvent: {}
+[1.509877] (-) TimerEvent: {}
+[1.610479] (-) TimerEvent: {}
+[1.711097] (-) TimerEvent: {}
+[1.811760] (-) TimerEvent: {}
+[1.912442] (-) TimerEvent: {}
+[1.980823] (pose_estimation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/astrobotics/arcuo/build/pose_estimation/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/astrobotics/arcuo/build/pose_estimation', 'env': {'USER': 'astrobotics', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/astrobotics/ros2_ws/install/zed_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/astrobotics', 'OLDPWD': '/home/astrobotics', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2367', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/astrobotics/arcuo/install:/home/astrobotics/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'astrobotics', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'astrobotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ISAAC_ROS_WS': '/home/astrobotics/workspaces/isaac_ros-dev/', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/astrobotics/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/astrobotics-desktop:@/tmp/.ICE-unix/2349,unix/astrobotics-desktop:/tmp/.ICE-unix/2349', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9769b179_75c7_4398_b235_3faa018d7212', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/astrobotics/arcuo/install/pose_estimation:/home/astrobotics/arcuo/install/my_camera:/home/astrobotics/ros2_ws/install/zed_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/astrobotics/arcuo/build/pose_estimation', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/astrobotics/arcuo/build/pose_estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages:/home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages:/home/astrobotics/arcuo/install/my_camera/lib/python3.10/site-packages:/home/astrobotics/ros2_ws/install/zed_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/astrobotics/ros2_ws/install/zed_msgs'}, 'shell': False}
+[1.995053] (my_camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/astrobotics/arcuo/build/my_camera/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/astrobotics/arcuo/build/my_camera', 'env': {'USER': 'astrobotics', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/astrobotics/ros2_ws/install/zed_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/astrobotics', 'OLDPWD': '/home/astrobotics', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2367', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/astrobotics/arcuo/install:/home/astrobotics/ros2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'astrobotics', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'astrobotics', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ISAAC_ROS_WS': '/home/astrobotics/workspaces/isaac_ros-dev/', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/astrobotics/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/astrobotics-desktop:@/tmp/.ICE-unix/2349,unix/astrobotics-desktop:/tmp/.ICE-unix/2349', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9769b179_75c7_4398_b235_3faa018d7212', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GNOME_TERMINAL_SERVICE': ':1.104', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/astrobotics/arcuo/install/pose_estimation:/home/astrobotics/arcuo/install/my_camera:/home/astrobotics/ros2_ws/install/zed_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/astrobotics/arcuo/build/my_camera', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/astrobotics/arcuo/build/my_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/astrobotics/arcuo/install/my_camera/lib/python3.10/site-packages:/home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages:/home/astrobotics/arcuo/install/my_camera/lib/python3.10/site-packages:/home/astrobotics/ros2_ws/install/zed_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/astrobotics/ros2_ws/install/zed_msgs'}, 'shell': False}
+[2.012558] (-) TimerEvent: {}
+[2.113205] (-) TimerEvent: {}
+[2.213806] (-) TimerEvent: {}
+[2.314431] (-) TimerEvent: {}
+[2.415095] (-) TimerEvent: {}
+[2.515756] (-) TimerEvent: {}
+[2.551423] (my_camera) StdoutLine: {'line': b'running develop\n'}
+[2.552118] (pose_estimation) StdoutLine: {'line': b'running develop\n'}
+[2.556575] (my_camera) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.557106] (my_camera) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.557339] (pose_estimation) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.557541] (pose_estimation) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.615922] (-) TimerEvent: {}
+[2.716546] (-) TimerEvent: {}
+[2.817166] (-) TimerEvent: {}
+[2.899916] (pose_estimation) StdoutLine: {'line': b'running egg_info\n'}
+[2.900586] (pose_estimation) StdoutLine: {'line': b'writing pose_estimation.egg-info/PKG-INFO\n'}
+[2.900782] (my_camera) StdoutLine: {'line': b'running egg_info\n'}
+[2.901000] (my_camera) StdoutLine: {'line': b'writing my_camera.egg-info/PKG-INFO\n'}
+[2.901210] (pose_estimation) StdoutLine: {'line': b'writing dependency_links to pose_estimation.egg-info/dependency_links.txt\n'}
+[2.901410] (my_camera) StdoutLine: {'line': b'writing dependency_links to my_camera.egg-info/dependency_links.txt\n'}
+[2.901611] (pose_estimation) StdoutLine: {'line': b'writing entry points to pose_estimation.egg-info/entry_points.txt\n'}
+[2.901804] (my_camera) StdoutLine: {'line': b'writing entry points to my_camera.egg-info/entry_points.txt\n'}
+[2.901975] (pose_estimation) StdoutLine: {'line': b'writing requirements to pose_estimation.egg-info/requires.txt\n'}
+[2.902109] (my_camera) StdoutLine: {'line': b'writing requirements to my_camera.egg-info/requires.txt\n'}
+[2.902237] (pose_estimation) StdoutLine: {'line': b'writing top-level names to pose_estimation.egg-info/top_level.txt\n'}
+[2.902407] (my_camera) StdoutLine: {'line': b'writing top-level names to my_camera.egg-info/top_level.txt\n'}
+[2.905937] (pose_estimation) StdoutLine: {'line': b"reading manifest file 'pose_estimation.egg-info/SOURCES.txt'\n"}
+[2.906248] (my_camera) StdoutLine: {'line': b"reading manifest file 'my_camera.egg-info/SOURCES.txt'\n"}
+[2.907380] (pose_estimation) StdoutLine: {'line': b"writing manifest file 'pose_estimation.egg-info/SOURCES.txt'\n"}
+[2.907671] (my_camera) StdoutLine: {'line': b"writing manifest file 'my_camera.egg-info/SOURCES.txt'\n"}
+[2.917232] (-) TimerEvent: {}
+[3.017795] (-) TimerEvent: {}
+[3.022897] (my_camera) StdoutLine: {'line': b'running build_ext\n'}
+[3.023554] (my_camera) StdoutLine: {'line': b'Creating /home/astrobotics/arcuo/install/my_camera/lib/python3.10/site-packages/my-camera.egg-link (link to .)\n'}
+[3.023845] (pose_estimation) StdoutLine: {'line': b'running build_ext\n'}
+[3.024139] (pose_estimation) StdoutLine: {'line': b'Creating /home/astrobotics/arcuo/install/pose_estimation/lib/python3.10/site-packages/pose-estimation.egg-link (link to .)\n'}
+[3.025669] (my_camera) StdoutLine: {'line': b'Installing ip_stream_node script to /home/astrobotics/arcuo/install/my_camera/lib/my_camera\n'}
+[3.026223] (my_camera) StdoutLine: {'line': b'Installing usbcam_node script to /home/astrobotics/arcuo/install/my_camera/lib/my_camera\n'}
+[3.026481] (pose_estimation) StdoutLine: {'line': b'Installing aruco_node script to /home/astrobotics/arcuo/install/pose_estimation/lib/pose_estimation\n'}
+[3.026744] (my_camera) StdoutLine: {'line': b'Installing webcam_node script to /home/astrobotics/arcuo/install/my_camera/lib/my_camera\n'}
+[3.027055] (pose_estimation) StdoutLine: {'line': b'\n'}
+[3.027318] (pose_estimation) StdoutLine: {'line': b'Installed /home/astrobotics/arcuo/build/pose_estimation\n'}
+[3.027470] (my_camera) StdoutLine: {'line': b'\n'}
+[3.027735] (my_camera) StdoutLine: {'line': b'Installed /home/astrobotics/arcuo/build/my_camera\n'}
+[3.028560] (pose_estimation) StdoutLine: {'line': b'running symlink_data\n'}
+[3.028733] (my_camera) StdoutLine: {'line': b'running symlink_data\n'}
+[3.028879] (my_camera) StdoutLine: {'line': b'symbolically linking /home/astrobotics/arcuo/build/my_camera/resource/my_camera -> /home/astrobotics/arcuo/install/my_camera/share/ament_index/resource_index/packages\n'}
+[3.029019] (pose_estimation) StdoutLine: {'line': b'symbolically linking /home/astrobotics/arcuo/build/pose_estimation/resource/pose_estimation -> /home/astrobotics/arcuo/install/pose_estimation/share/ament_index/resource_index/packages\n'}
+[3.029252] (my_camera) StdoutLine: {'line': b'symbolically linking /home/astrobotics/arcuo/build/my_camera/package.xml -> /home/astrobotics/arcuo/install/my_camera/share/my_camera\n'}
+[3.029398] (pose_estimation) StdoutLine: {'line': b'symbolically linking /home/astrobotics/arcuo/build/pose_estimation/package.xml -> /home/astrobotics/arcuo/install/pose_estimation/share/pose_estimation\n'}
+[3.117996] (-) TimerEvent: {}
+[3.133765] (my_camera) CommandEnded: {'returncode': 0}
+[3.166375] (my_camera) JobEnded: {'identifier': 'my_camera', 'rc': 0}
+[3.168529] (pose_estimation) CommandEnded: {'returncode': 0}
+[3.184866] (pose_estimation) JobEnded: {'identifier': 'pose_estimation', 'rc': 0}
+[3.186705] (-) EventReactorShutdown: {}

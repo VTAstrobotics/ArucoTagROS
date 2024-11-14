@@ -1,0 +1,3 @@
+[console_scripts]
+aruco_node = pose_estimation.aruco_node:main
+
